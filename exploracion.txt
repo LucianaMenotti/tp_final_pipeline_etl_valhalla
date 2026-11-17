@@ -1,0 +1,290 @@
+
+=== filas e ids
+ filas  ids_distintos  ids_repetidos
+  2575           2500             75
+
+=== filas totalmente iguales
+ filas  filas_distintas
+  2575             2500
+
+=== ids repetidos (ejemplos)
+id_pedido  n
+  P-00760  3
+  P-01099  3
+  P-00016  2
+  P-00035  2
+  P-00086  2
+  P-00115  2
+  P-00146  2
+  P-00152  2
+  P-00170  2
+  P-00206  2
+  P-00224  2
+  P-00346  2
+  P-00347  2
+  P-00350  2
+  P-00357  2
+  P-00389  2
+  P-00392  2
+  P-00462  2
+  P-00493  2
+  P-00504  2
+
+=== vacios por columna
+ id_pedido  fecha_pedido  id_cliente  email_cliente  pais  ciudad  categoria  producto  cantidad  precio_unitario  descuento_pct  total  estado  medio_pago
+       0.0           0.0         0.0            0.0 126.0     0.0      101.0       0.0       0.0              0.0            0.0  129.0     0.0         0.0
+
+=== textos con espacios al inicio o al final
+ id_pedido  fecha_pedido  id_cliente  email_cliente  pais  ciudad  categoria  producto  cantidad  precio_unitario  descuento_pct  total  estado  medio_pago
+       0.0           0.0         0.0            0.0   0.0     0.0        0.0       0.0       0.0              0.0            0.0    0.0   130.0         0.0
+
+=== valores de pais
+     pais   n
+Argentina 923
+ Paraguay 312
+     Peru 311
+  Uruguay 311
+ Colombia 301
+    Chile 291
+     None 126
+
+=== valores de categoria
+   categoria   n
+ Electronica 629
+Indumentaria 626
+  Accesorios 626
+       Hogar 593
+        None 101
+
+=== valores de estado
+    estado    n
+ entregado 1445
+ cancelado  360
+   enviado  348
+ pendiente  217
+ ENTREGADO   49
+ENTREGADO    38
+ ENTREGADO   37
+  ENVIADO    11
+   ENVIADO   11
+ CANCELADO   10
+CANCELADO    10
+   ENVIADO   10
+PENDIENTE     8
+ CANCELADO    8
+ PENDIENTE    8
+ PENDIENTE    5
+
+=== valores de medio_pago
+       medio_pago   n
+    transferencia 674
+billetera_virtual 666
+          tarjeta 635
+         efectivo 600
+
+=== ciudades por pais
+     pais       ciudad   n
+Argentina Buenos Aires 310
+Argentina      Cordoba 311
+Argentina      Rosario 302
+    Chile     Santiago 291
+ Colombia       Bogota 301
+ Paraguay     Asuncion 312
+     Peru         Lima 311
+  Uruguay   Montevideo 311
+     None     Asuncion  11
+     None       Bogota  16
+     None Buenos Aires  24
+     None      Cordoba  16
+     None         Lima  12
+     None   Montevideo  17
+     None      Rosario  18
+     None     Santiago  12
+
+=== productos por categoria
+   categoria    producto   n
+  Accesorios     Mochila 195
+  Accesorios       Mouse 215
+  Accesorios     Teclado 216
+ Electronica Auriculares 193
+ Electronica     Celular 206
+ Electronica    Notebook 230
+       Hogar    Cafetera 183
+       Hogar Lampara LED 211
+       Hogar Silla gamer 199
+Indumentaria     Campera 226
+Indumentaria      Remera 188
+Indumentaria  Zapatillas 212
+        None Auriculares  10
+        None    Cafetera   8
+        None     Campera   4
+        None     Celular  10
+        None Lampara LED   6
+        None     Mochila   6
+        None       Mouse   9
+        None    Notebook  14
+        None      Remera   4
+        None Silla gamer  11
+        None     Teclado   7
+        None  Zapatillas  12
+
+=== id_pedido con formato distinto de P- y 5 digitos
+Empty DataFrame
+Columns: [id_pedido, n]
+Index: []
+
+=== id_cliente con formato distinto de C y 4 digitos
+Empty DataFrame
+Columns: [id_cliente, n]
+Index: []
+
+=== emails con formato raro
+Empty DataFrame
+Columns: [email_cliente, n]
+Index: []
+
+=== fechas con formato distinto de AAAA-MM-DD
+fecha_pedido  n
+  24/11/2024  3
+  26/02/2024  3
+  16/03/2024  3
+  20/08/2025  3
+  20/04/2025  3
+  04/10/2024  3
+  26/04/2024  3
+  11/11/2024  3
+  16/10/2025  2
+  01/08/2024  2
+  07/06/2024  2
+  23/06/2024  2
+  27/09/2025  2
+  12/02/2024  2
+  27/07/2025  2
+  12/09/2025  2
+  13/06/2025  2
+  24/01/2024  2
+  07/10/2024  2
+  08/08/2024  2
+  05/02/2024  2
+  17/06/2025  2
+  19/02/2024  2
+  04/02/2025  2
+  25/10/2024  2
+  10/07/2025  2
+  23/12/2024  2
+  19/07/2025  2
+  20/03/2024  2
+  24/07/2024  2
+
+=== fechas que no se convierten a DATE
+fecha_pedido  n
+  26/02/2024  3
+  26/04/2024  3
+  04/10/2024  3
+  20/04/2025  3
+  20/08/2025  3
+  16/03/2024  3
+  24/11/2024  3
+  11/11/2024  3
+  23/12/2024  2
+  29/11/2024  2
+  12/02/2024  2
+  04/12/2025  2
+  13/06/2025  2
+  02/05/2025  2
+  24/01/2024  2
+  16/09/2025  2
+  08/12/2025  2
+  01/08/2024  2
+  19/02/2024  2
+  10/07/2025  2
+  25/10/2024  2
+  27/07/2025  2
+  08/02/2024  2
+  01/07/2024  2
+  27/09/2025  2
+  04/02/2025  2
+  11/07/2025  2
+  22/03/2025  2
+  07/10/2024  2
+  12/09/2025  2
+
+=== rango de fechas validas
+    minima     maxima
+2024-01-01 2025-12-30
+
+=== valores no numericos en cantidad
+Empty DataFrame
+Columns: [cantidad, n]
+Index: []
+
+=== resumen de cantidad
+ numericos  negativos  ceros  minimo  maximo
+      2575      102.0    0.0    -6.0     6.0
+
+=== valores no numericos en precio_unitario
+precio_unitario  n
+     210.000,00 16
+     120.000,00 15
+      76.000,00 15
+      28.900,00 14
+     620.000,00 13
+      45.000,00 11
+      15.000,00 11
+     850.000,00  9
+       9.800,75  8
+      12.500,50  8
+      98.000,00  7
+      35.000,00  3
+
+=== resumen de precio_unitario
+ numericos  negativos  ceros  minimo   maximo
+      2445        0.0    0.0 9800.75 850000.0
+
+=== valores no numericos en descuento_pct
+Empty DataFrame
+Columns: [descuento_pct, n]
+Index: []
+
+=== resumen de descuento_pct
+ numericos  negativos  ceros  minimo  maximo
+      2575        0.0  829.0     0.0    20.0
+
+=== valores no numericos en total
+Empty DataFrame
+Columns: [total, n]
+Index: []
+
+=== resumen de total
+ numericos  negativos  ceros  minimo    maximo
+      2446        0.0    0.0  7840.6 5100000.0
+
+=== cantidad con decimales
+ n
+ 0
+
+=== descuento fuera de 0 a 100
+ n
+ 0
+
+=== total contra el calculado
+ filas_comparadas  distintos  distintos_solo_por_signo
+             2316      102.0                     102.0
+
+=== ejemplos de total distinto del calculado
+id_pedido cantidad precio_unitario descuento_pct     total  calculado
+  P-00001       -3        850000.0            20 2040000.0 -2040000.0
+  P-00004       -3         28900.0             5   82365.0   -82365.0
+  P-00057       -4         76000.0            20  243200.0  -243200.0
+  P-00064       -2        210000.0             0  420000.0  -420000.0
+  P-00073       -1         98000.0             0   98000.0   -98000.0
+  P-00088       -1         35000.0            20   28000.0   -28000.0
+  P-00128       -3         15000.0             5   42750.0   -42750.0
+  P-00173       -4         98000.0            15  333200.0  -333200.0
+  P-00188       -5        850000.0             0 4250000.0 -4250000.0
+  P-00257       -2        850000.0             0 1700000.0 -1700000.0
+  P-00348       -4         98000.0             0  392000.0  -392000.0
+  P-00352       -6        620000.0            10 3348000.0 -3348000.0
+  P-00356       -4         28900.0             0  115600.0  -115600.0
+  P-00363       -1         35000.0            15   29750.0   -29750.0
+  P-00412       -1         35000.0            10   31500.0   -31500.0

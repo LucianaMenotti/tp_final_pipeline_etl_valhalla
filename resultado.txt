@@ -1,0 +1,87 @@
+raw_pedidos: 2575 filas
+validos: 1475 filas
+rechazados: 1100 filas
+validos + rechazados: 2575
+               regla  cantidad
+      fecha_invalida       257
+ estado_no_permitido       205
+     precio_invalido       130
+          total_nulo       129
+           pais_nulo       126
+cantidad_no_positiva       102
+      categoria_nula       101
+        id_duplicado        75
+rechazados_limpios: 1073 filas
+ filas  ids_distintos  sin_fecha  sin_pais  sin_categoria  cantidad_mala  precio_malo  sin_total  estado_malo
+  1073           1073        0.0       0.0            0.0            0.0          0.0        0.0          0.0
+tabla_final: 2500 filas
+ filas  ids_distintos  con_nulos  total_inconsistente fecha_minima fecha_maxima
+  2500           2500        0.0                  0.0   2024-01-01   2025-12-30
+    column_name data_type
+      id_pedido   VARCHAR
+   fecha_pedido      DATE
+     id_cliente   VARCHAR
+  email_cliente   VARCHAR
+           pais   VARCHAR
+         ciudad   VARCHAR
+      categoria   VARCHAR
+       producto   VARCHAR
+       cantidad   INTEGER
+precio_unitario    DOUBLE
+  descuento_pct    DOUBLE
+          total    DOUBLE
+         estado   VARCHAR
+     medio_pago   VARCHAR
+
+Pregunta 1
+   categoria  facturacion_total
+ Electronica       958481000.00
+       Hogar       156808170.22
+Indumentaria       144170950.00
+
+Pregunta 2
+    mes  facturacion_total  facturacion_sin_cancelados
+2024-01        68122629.87                 58077209.37
+2024-02        52515552.77                 42277751.47
+2024-03        43417067.98                 33894131.37
+2024-04        49108390.65                 43168104.12
+2024-05        64922320.74                 61579862.28
+2024-06        54582670.83                 44971914.33
+2024-07        43218153.75                 32626382.11
+2024-08        79059123.88                 76077787.94
+2024-09        43409084.08                 41954300.28
+2024-10        71863383.69                 57351319.19
+2024-11        73526497.03                 55446984.03
+2024-12        59229505.85                 48632169.88
+2025-01        74530122.87                 63870692.87
+2025-02        52762155.47                 51812723.25
+2025-03        61048456.15                 55442105.65
+2025-04        62812310.33                 53749220.93
+2025-05        65440859.39                 52685443.12
+2025-06        55460142.76                 47002137.58
+2025-07        78262776.79                 71185573.79
+2025-08        68487112.65                 62642510.25
+2025-09        66158197.63                 56948708.68
+2025-10        88809941.60                 74817872.54
+2025-11        75654423.23                 70656642.26
+2025-12        52705010.11                 43788432.06
+
+Pregunta 3
+     pais  ticket_promedio
+ Colombia        702368.25
+    Chile        679572.27
+Argentina        601528.11
+  Uruguay        587782.24
+     Peru        568193.81
+ Paraguay        480435.14
+
+Pregunta 4
+ total_pedidos  cancelados  porcentaje_cancelados
+          2500       380.0                   15.2
+
+Pregunta 5
+       medio_pago  pedidos
+    transferencia      661
+billetera_virtual      636
+          tarjeta      619
+         efectivo      584
